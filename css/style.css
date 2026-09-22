@@ -619,37 +619,12 @@ h3 { font-size: 19px; margin-bottom: 10px; }
 .mega-list-light strong { color: var(--ink); }
 
 /* Responsive */
-/* Mobile menu toggle */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 26px;
-  cursor: pointer;
-  color: var(--navy-deep);
-  padding: 4px 8px;
-  line-height: 1;
-}
+.menu-toggle { display: none; }
 
 @media (max-width: 860px) {
-  .menu-toggle { display: block; }
-  .main-nav {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: var(--white);
-    border-bottom: 2px solid var(--navy);
-    flex-direction: column;
-    padding: 12px 24px 18px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-    z-index: 99;
-  }
-  .main-nav.open { display: flex; }
-  .main-nav a { padding: 10px 0; font-size: 15px; border-bottom: 1px solid var(--border); }
-  .main-nav a:last-child { border-bottom: none; }
-  .site-header { position: relative; }
+  .header-inner { flex-direction: column; gap: 10px; padding: 14px 24px; }
+  .main-nav { display: flex; flex-wrap: wrap; gap: 6px 16px; justify-content: center; }
+  .main-nav a { font-size: 13px; }
   h1 { font-size: 30px; }
   h2 { font-size: 24px; }
   .about-content { grid-template-columns: 1fr; gap: 28px; }
