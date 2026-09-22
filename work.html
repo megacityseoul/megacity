@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="site-header"><div class="container header-inner"><a href="index.html" class="logo">시민과함께하는메가시티연구소</a><nav class="main-nav"><a href="about.html">소개</a><a href="megacity.html">메가시티</a><a href="work.html" class="active">주요 사업</a><a href="disclosure.html">공시</a><a href="contact.html">연락처</a></nav></div></header>
+<header class="site-header"><div class="container header-inner"><a href="index.html" class="logo">시민과함께하는메가시티연구소</a><button class="menu-toggle" aria-label="메뉴 열기">☰</button><nav class="main-nav"><a href="about.html">소개</a><a href="megacity.html">메가시티</a><a href="work.html" class="active">주요 사업</a><a href="disclosure.html">공시</a><a href="contact.html">연락처</a></nav></div></header>
 
 <section class="page-hero"><div class="container"><p class="eyebrow">OUR WORK</p><h1>주요 사업</h1><p class="hero-desc">연구사업과 홍보사업의 두 축으로 메가시티의 미래를 열어갑니다.</p></div></section>
 
@@ -72,5 +72,6 @@
 </section>
 
 <footer class="site-footer"><div class="container footer-inner"><p class="footer-org">(사)시민과함께하는메가시티연구소</p><p class="footer-addr">서울특별시 마포구 성미산로 12, 4층(성산동) &nbsp;|&nbsp; 고유번호 514-82-154** &nbsp;|&nbsp; 전화 010-3883-8245</p><p>&copy; 2026 시민과함께하는메가시티연구소. All rights reserved.</p></div></footer>
+<script>document.querySelector(".menu-toggle").addEventListener("click",function(){document.querySelector(".main-nav").classList.toggle("open");this.textContent=this.textContent==="☰"?"✕":"☰"});</script>
 </body>
 </html>
